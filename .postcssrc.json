@@ -1,0 +1,9 @@
+{
+    "parser": "postcss-scss",
+    "map": false,
+    "plugins": {
+        "autoprefixer": {},
+        "postcss-nested": {},
+        "cssnano": {}
+    }
+}
