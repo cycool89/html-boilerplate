@@ -1,0 +1,38 @@
+.flex-container {
+  display: flex;
+
+  &.row {
+    flex-direction: row;
+
+    &-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &.col {
+    flex-direction: column;
+
+    &-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &.main {
+    &-center {
+      justify-content: center;
+    }
+    &-space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &.cross {
+    &-center {
+      align-items: center;
+    }
+  }
+
+  & .item-grow-1 {
+    flex-grow: 1;
+  }
+}
