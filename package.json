@@ -4,7 +4,10 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
+    "clean-dist": "rimraf dist",
+    "prestart": "npm run clean-dist",
     "start": "parcel src/index.html --open",
+    "prebuild": "npm run clean-dist",
     "build": "parcel build"
   },
   "keywords": [],
@@ -12,13 +15,15 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.2",
-    "modern-css-reset": "^1.4.0",
     "postcss": "^8.4.5",
     "postcss-nested": "^5.0.6"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.1",
+    "@parcel/validator-typescript": "^2.2.1",
     "parcel": "^2.2.1",
-    "parcel-plugin-nuke-dist": "^1.0.1"
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
   }
 }
