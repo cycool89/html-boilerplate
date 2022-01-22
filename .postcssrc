@@ -1,7 +1,7 @@
 // JSON5 file
 {
     "parser": "postcss-scss",
-    "map": false,
+    "map": true,
     "plugins": {
         "autoprefixer": {},
         "postcss-nested": {},
